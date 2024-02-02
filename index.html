@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Gasolina</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./src/img/fundo.png" alt="Homem segura um bico de abastecimento de gasolina, mas em vez de gasolina, moedas estão saindo. Outro homem está coletando e organizando as moedas.">
+    </header>
+
+    <section class="container">
+
+        <h1>Calcule seu consumo da Gasolina</h1>
+        
+        <form class="formm">
+            <div class="divForm">
+                <label for="distanciaPercorrer">Distância a percorrer</label>
+                <input type="number" step="0.01" class="distancia" id="idInput" required>
+                
+                <!--O STEP="O.01, permite colocar numeros do tipo float
+                    type="number" permite colocar virgula ao digitar números do tipo float-->
+            </div>
+            
+            <div class="divForm">
+                <label for="consVeiculo">Consumo do Veículo Km/𝓁</label>
+                <input type="number" step="0.01" class="consumo" id="idInput" required>
+            </div>
+            
+            <div class="divForm">
+                <label for="valorGasolina">Valor do Combustível R$</label>
+                <input type="number" step="0.01" class="valor" id="idInput" required>
+            </div>
+            
+            <div class="divBotao">
+                <button type="submit" class="botaoCalcular" value="Calcular">Calcular</button>
+            </div>
+            
+        </form>
+        
+        <div class="divResultado">
+            <div class="resultConsumoGas"></div>
+            <div class="resultGasolinaKm"></div>
+        </div>
+        
+    </section>
+   <script src="./src/js/index.js"></script>
+</body>
+</html>

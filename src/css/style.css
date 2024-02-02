@@ -1,0 +1,105 @@
+body{
+    background-color: Linen;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+img {
+    display: block;
+    width: 10%;
+    height: 5%;
+    margin: auto;
+    
+    border-radius: 0 100px;
+    padding: 10px;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+   
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: OrangeRed;
+    font-size: 25px;
+    text-align: center;
+}
+
+.divForm {
+    margin: 15px auto;
+}
+
+input {
+    margin: 2px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+form input:focus {
+    border: none;
+    outline: 1px solid orangered;
+}
+
+.divBotao{
+    float: right;
+    text-align: center;
+}
+
+.botaoCalcular {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    
+    color: white;
+    font-size: 11px;
+    border: none;
+    
+    transition: transform 0.2s;
+}
+
+.botaoCalcular:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    
+    
+}
+
+
+.divResultado {
+    /*clear: both;*/
+    color: orangered;
+    margin: 0 90px;
+    width: 400px;
+    padding: 20px;
+}
+
+.resultConsumoGas {
+    display: inline-block;
+    margin: 0 8px;
+    
+}
+
+.resultGasolinaKm {
+    display: inline-block;
+    margin: 0 8px;
+    
+}
